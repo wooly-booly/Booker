@@ -1,0 +1,33 @@
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
+}
+
+
+/* Booker table*/
+table.booker {
+	border: 1px solid black;
+}
+
+table.booker tr td {
+	font-size: 12px;
+	vertical-align: top;
+	border: 1px solid black; 
+	width: 100px;
+	height: 60px;
+	padding: 2px 5px 5px 5px;
+}
+
+table.booker tr td.days {
+	font-size: 14px;
+	height: 20px;
+}
+
+p span.boardroom_number {
+	border: 1px solid black;
+	padding: 5px;
+}
