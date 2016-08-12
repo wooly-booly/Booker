@@ -1,4 +1,4 @@
-<script src="/public/js/confirmDelete.js"></script>
+<script src="/js/confirmDelete.js"></script>
 <table>
 <?php
     if (!empty($employees)) {

@@ -1,4 +1,4 @@
-<script src="/public/js/confirmDelete.js"></script>
+<script src="/js/confirmDelete.js"></script>
 <b>B.B. Details</b>
 
 <form action="/booker/modify/" method="post">
