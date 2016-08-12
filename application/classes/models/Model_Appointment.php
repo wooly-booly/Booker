@@ -104,7 +104,7 @@ class Model_Appointment extends Model
         $appoint = $appoint[0];
 
         if (($appoint->employee_id == $params['employee_id'])
-        &&    ($appoint->description == $params['description'])) {
+        && ($appoint->description == $params['description'])) {
             return true;
         }
 

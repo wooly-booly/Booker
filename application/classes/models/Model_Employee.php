@@ -90,13 +90,14 @@ class Model_Employee extends Model
 
             return $result;
         } else {
-            $q = ' DELETE FROM appointments, employee_to_appointment, employees '
-            .' USING appointments, employee_to_appointment, employees '
+            $q = ' DELETE FROM appointments, employee_to_appointment '
+            .' USING appointments, employee_to_appointment '
             .' WHERE appointments.id=employee_to_appointment.appointment_id '
-            .' AND employees.id=employee_to_appointment.employee_id '
             ." AND employee_to_appointment.employee_id='".$id."'";
+            $this->db->sql($q);
 
-            $result = $this->db->sql($q);
+            $q = ' DELETE FROM employees WHERE employees.id='.$id;
+            $this->db->sql($q);
 
             return $result;
         }
